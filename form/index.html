@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Form</h1>
+        <form action="results.html" method="GET">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="username" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="200">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" min="2018-4-10" max="2022-12-31">
+            </div>
+            <div class="form-group">
+                <label>Favorite Drink</label>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" name="coffee" id="coffee">
+                        <label for="coffee">Coffee</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tea" id="tea">
+                        <label for="tea">Tea</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="eyecolour">Eyecolour</label>
+                <select name="eyecolour" id="eyecolour" multiple>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Black">Yellow</option>  
+                </select>
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <input type="hidden" name="hidden" id="hidden">
+            <div>
+                <label for="file">File</label>
+                <input type="file" name="file">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="colour">Colour</label>
+                <input type="color" name="colour" id="colour">
+            </div>
+            <div>
+                <label>
+                    Password
+                    <input type="password" name="password" required>
+                </label>
+            </div>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
